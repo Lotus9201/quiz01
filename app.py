@@ -1,15 +1,15 @@
 import os
 
+
+downloads_folder = os.path.join(os.getcwd(), "Downloads")
+
 file_types = {
     "Images": [".jpg", ".jpeg", ".png", ".gif"],
     "Documents": [".pdf", ".doc", ".docx", ".txt"],
     "Music": [".mp3", ".wav"],
 }
 
-# 取得當前Downloads資料夾路徑
-downloads_folder = os.path.join(os.getcwd(), "Downloads")
-
-# ifDownloads 資料夾不存在，就創建它並放入測試檔案
+# 如果 Downloads 資料夾不存在，就創建它並放入測試檔案
 if not os.path.exists(downloads_folder):
     os.makedirs(downloads_folder)
     
